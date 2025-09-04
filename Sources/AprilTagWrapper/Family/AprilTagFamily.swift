@@ -16,6 +16,9 @@ public final class AprilTagFamily {
         case "tag16h5":
             guard let fam = tag16h5_create() else { return nil }
             self.ptr = fam
+        case "tag36h11":
+            guard let fam = tag36h11_create() else { return nil }
+            self.ptr = fam
         default:
             return nil
         }
@@ -23,7 +26,7 @@ public final class AprilTagFamily {
 
     deinit {
         if ptr.pointee.name != nil {
-            // match with tag16h5_destroy (or other family-specific destroyers)
+            tag16h5_destroy(self.ptr)
         }
     }
 

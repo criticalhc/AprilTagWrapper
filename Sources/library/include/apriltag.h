@@ -13,6 +13,7 @@ extern "C" {
 
 #include <stdlib.h>
 
-
+#include "../tag36h11.h"
 #include "../apriltag.h"
 #include "../tag16h5.h"
+#include "../common/image_u8.h"

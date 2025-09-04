@@ -49,7 +49,7 @@ extension AprilTagDetector {
     }
     
     
-//    public func addFamily(_ family: AprilTagFamily) {
-//        apriltag_detector_add_family(detector, family.ptr)
-//    }
+    public func addFamily(_ family: AprilTagFamily) {
+        apriltag_detector_add_family(detector, family.ptr)
+    }
 }
